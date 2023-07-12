@@ -1,0 +1,9 @@
+D:\VS_Projects\VS_Project_Hadi\VS_Project_Hadi\bin\Debug\VS_Project_Hadi.exe.config
+D:\VS_Projects\VS_Project_Hadi\VS_Project_Hadi\bin\Debug\VS_Project_Hadi.exe
+D:\VS_Projects\VS_Project_Hadi\VS_Project_Hadi\bin\Debug\VS_Project_Hadi.pdb
+D:\VS_Projects\VS_Project_Hadi\VS_Project_Hadi\obj\Debug\VS_Project_Hadi.Form1.resources
+D:\VS_Projects\VS_Project_Hadi\VS_Project_Hadi\obj\Debug\VS_Project_Hadi.Properties.Resources.resources
+D:\VS_Projects\VS_Project_Hadi\VS_Project_Hadi\obj\Debug\VS_Project_Hadi.csproj.GenerateResource.Cache
+D:\VS_Projects\VS_Project_Hadi\VS_Project_Hadi\obj\Debug\VS_Project_Hadi.exe
+D:\VS_Projects\VS_Project_Hadi\VS_Project_Hadi\obj\Debug\VS_Project_Hadi.pdb
+D:\VS_Projects\VS_Project_Hadi\VS_Project_Hadi\obj\Debug\VS_Project_Hadi.csprojResolveAssemblyReference.cache

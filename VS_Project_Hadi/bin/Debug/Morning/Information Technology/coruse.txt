@@ -1,0 +1,9 @@
+Introduction to Programming |A-0185
+Visual Programming |A-0187
+Algorithms Analysis |A-0234
+Data Structures |A-0356
+Operating Systems |A-0245
+OOP |A-0445
+OOP Lab |B-0446
+Web Design |A-0573
+Web Design Lab |B-0574

@@ -1,0 +1,42 @@
+﻿@model WebApp_CarSells_Project_3.Models.Table
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<link href="@Url.Content("~/Stayles/NavPar.css")" rel="stylesheet" type="text/css">
+<link href="@Url.Content("~/Stayles/Tap.css")" rel="stylesheet" type="text/css">
+
+
+<ul>
+    <li>@Html.ActionLink("Main Page", "Index")</li>
+    <li>@Html.ActionLink("Car Store", "CarStore")</li>
+    <li>@Html.ActionLink("Add a New Car", "AddCar"))</li>
+    <li style="float:right">@Html.ActionLink("Enable Edit", "CarStore")</li>
+</ul>
+
+<h2>Details</h2>
+
+@if (Model.CarImgPath != null)
+{
+    <h1><img src="@Url.Content(Model.CarImgPath)" /></h1>
+}
+else
+{
+    <h1></h1>
+}
+
+<th>Model.Car_Name</th>
+<td>Model.Owner</td>
+<td>Model.Phone_Number</td>
+<td>Model.Price</td>
+<td>Model.Payment_Method</td>
+<td>Model.Transmission</td>
+<td>Model.Condition</td>
+<td>Model.Licensed</td>
+
+<td>
+    @Html.ActionLink("Delete", "Delete", new { id = Model.Id }) |
+@Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+@Html.ActionLink("Details", "Details", new { id = Model.Id })
+</td>

@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<link href="@Url.Content("~/Stayles/NavPar.css")" rel="stylesheet" type="text/css">
+<link href="@Url.Content("~/Stayles/Tap.css")" rel="stylesheet" type="text/css">
+
+
+<ul>
+    <li>@Html.ActionLink("Main Page", "Index")</li>
+    <li>@Html.ActionLink("Car Store", "CarStore")</li>
+    <li>@Html.ActionLink("Add a New Car", "AddCar"))</li>
+</ul>
+
+
+<h2>Index</h2>
+
+@Html.ActionLink("Open Store", "CarStore")

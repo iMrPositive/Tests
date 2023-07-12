@@ -1,0 +1,80 @@
+﻿@model WebApp_CarSells_Project_3.Models.Table
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<link href="@Url.Content("~/Stayles/NavPar.css")" rel="stylesheet" type="text/css">
+<link href="@Url.Content("~/Stayles/Tap.css")" rel="stylesheet" type="text/css">
+
+
+<ul>
+    <li>@Html.ActionLink("Main Page", "Index")</li>
+    <li>@Html.ActionLink("Car Store", "CarStore")</li>
+    <li>@Html.ActionLink("Add a New Car", "AddCar"))</li>
+    <li style="float:right">@Html.ActionLink("Enable Edit", "CarStore")</li>
+</ul>
+
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm("Edit", "Car", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <table>
+        <tr>
+            <td>Car Name:</td>
+            <td>@Html.TextBoxFor(x => x.Car_Name)</td>
+        </tr>
+        <tr>
+            <td>Owner:</td>
+            <td>@Html.TextBoxFor(x => x.Owner)</td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+            <td>@Html.TextBoxFor(x => x.Phone_Number)</td>
+        </tr>
+
+        <tr>
+            <td>Price:</td>
+            <td>@Html.TextBoxFor(x => x.Price)</td>
+        </tr>
+
+
+        <tr>
+            <td>PaymentMethod:</td>
+            <td>
+                @Html.DropDownListFor(m => m.Payment_Method, new[] {new SelectListItem() {Text="Cash Only", Value="Cash Only"},
+                                                           new SelectListItem() {Text="Cash or Installments", Value="Cash or Installments" },
+                                                           new SelectListItem() {Text="Installments", Value="Installments" }}, "")
+            </td>
+        </tr>
+
+        <tr>
+            <td>Transmission:</td>
+            <td>
+                @Html.DropDownListFor(m => m.Transmission, new[] {new SelectListItem() {Text="Automatic", Value="Automatic"},
+                                                           new SelectListItem() {Text="Manual", Value="Manual" } }, "")
+            </td>
+        </tr>
+
+        <tr>
+            <td>Condition:</td>
+            <td>
+                @Html.DropDownListFor(m => m.Condition, new[] {new SelectListItem() {Text="New", Value="New"},
+                                                           new SelectListItem() {Text="Used", Value="Used" } }, "")
+            </td>
+        </tr>
+
+        <tr>
+            <td>Licensed:</td>
+            <td>@Html.CheckBoxFor(x => x.Licensed)</td>
+        </tr>
+
+        <tr>
+                <td>Upload Image</td>
+                <td>@Html.TextBoxFor(x => x.ImageFile, new { type = "file" })</td>
+            </tr>
+    </table>
+    <br /><br />
+    <input id="Submit1" type="submit" value="Edit Car" />
+}
